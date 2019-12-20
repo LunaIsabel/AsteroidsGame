@@ -15,9 +15,6 @@ public void setup()
   for(int i = 0; i < (int)(Math.random()*5) + 5; i++){
   	asteroides.add(new Asteroid());
   }
-  for(int i = 0; i < 1; i++){
-  	pew.add(new Bullet(darthVadar));
-  }
   iswPressed = false;
   isaPressed = false;
   issPressed = false;
@@ -53,6 +50,11 @@ public void draw()
   if(islPressed){
   	pew.add(new Bullet(darthVadar));
   }
+  if(islPressed && cooldown == 0){
+    pew.add(new Bullet(darthVadar));
+    cooldown = 20;
+  }
+ 
 
   darthVadar.show();
 
@@ -62,7 +64,9 @@ void keyPressed(){
 	if(key == 'w') iswPressed == true;
 	if(key == 'a') isaPressed == true;
 	if(key == 's') issPressed == true;
-	if(key == 'l') islPressed == true;
+	if(key == 'l') islPressed{
+		pew.add(new Bullet(darthVadar));
+	}
 }
 
 void keyReleased(){
