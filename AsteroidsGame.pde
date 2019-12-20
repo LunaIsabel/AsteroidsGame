@@ -64,5 +64,4 @@ void keyReleased(){
 	if(key == 'w') iswPressed == false;
 	if(key == 'a') isaPressed == false;
 	if(key == 's') issPressed == false;
-	if(key == 'l') islPressed == false;
 }
