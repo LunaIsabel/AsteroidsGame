@@ -1,7 +1,7 @@
 class Spaceship extends Floater//extends Floater  
 {   
 	public Spaceship(){
-		corners = 4;
+		corners = 3;
 		xCorners = new int[corners];
 		yCorners = new int[corners];
 		xCorners[0] = -16;
@@ -10,8 +10,6 @@ class Spaceship extends Floater//extends Floater
 		yCorners[1] = 0;
 		xCorners[2] = -16;
 		yCorners[2] = -16;
-		xCorners[3] = 0;
-		yCorners[3] = 0;
 		myColor = color(200, 0, 0);
 		myCenterX = width/2;
 		myCenterY = height/2;
@@ -19,42 +17,7 @@ class Spaceship extends Floater//extends Floater
 		myDirectionY = 0;
 		myPointDirection = 0;
 	}
-	public void turn(int rotationDegrees){
-		myPointDirection += rotationDegrees;
-		if(myPointDirection == - 360 || myPointDirection == 360){
-			myPointDirection = 0;
-		}
-	}
-	public void accelerate (double cuanto){
-		double nRadian = myPointDirection * (Math.PI/180);
-		if(type == 'x'){
-			myDirectionX += ((cuanto) * Math.cos(Radian));
 
-		}
-		if(type == 'y'){
-			myDirectionY += ((cuanto) * Math.sin(Radian));
-	
-		}
-	}
-	public void decelerate(double cuanto){
-		double nRadian = myPointDirection*(MATH.PI/180);
-		if(myDirectionX != 0 && myDirectionX > 0.0){
-			if(myPointDirection > -180 && myPointDirection < 0){
-				myDirectionX -= ((cuanto) * Math.cos(cuanto));
-			}else if(myDirectionX != 0 && myDirectionX < 0.0){
-				myDirectionX += ((cuanto) * Math.cos(cuanto));
-			}
-		}
-		if(myDirectionY != 0 && myDirectionY > 0.0){
-			myDirectionY -= ((cuanto) * Math.sin(cuanto));
-		}else if(myDirectionY != 0 && myDirectionY < 0.0){
-			if(myPointDirection > -180 && myPointDirection < 0 || (myPointDirection > 180 && myPointDirection < 360)){
-				myDirectionY -= ((cuanto) * Math.sin(cuanto));
-			}else if((myPointDirection < -180 && myPointDirection > -360) || (myPointDirection < 180 && myPointDirection > 0)){
-				myDirectionY += ((cuanto) * Math.sin(cuanto));
-			}
-		}
-	}
 	public void setX(int x){
 		myCenterX = x;
 	}
