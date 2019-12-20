@@ -5,7 +5,6 @@ public void setup()
 {
   //your code here
   size(500, 500);
-  background(0);
   for(int i = 0; i < estrella.length; i++){
   	estrella[i] = new Star();
   }
@@ -15,8 +14,9 @@ public void setup()
 public void draw() 
 {
   //your code here
+  background(0);
   for(int i = 0; i < estrella.length; i++){
-  	stars[i].show();
+  	estrella[i].show();
   }
   darthVadar.show();
 }
