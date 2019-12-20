@@ -53,7 +53,7 @@ public void draw()
   for(int i = asteroides.size() - 1; i >= 0; i--){
   	boolean stat = false;
   	for(int j = 0; j < pew.size(); j ++){
-  		if(dist((float)pew.get(j).getX(), (float)pew.get(j).getY(), (float)asteroides.get(i).getX(), (float)asteroides.get(i).getY() < 9)){
+  		if(dist((float)pew.get(j).getX(), (float)pew.get(j).getY(), (float)asteroides.get(i).getX(), (float)asteroides.get(i).getY()) < 9 ){
   			stat = true;
   			pew.remove(j);
   		}
