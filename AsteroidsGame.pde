@@ -2,6 +2,7 @@
 Spaceship darthVadar;
 Star[] estrella = new Star[500];
 ArrayList <Asteroid> asteroides = new ArrayList <Asteroid>();
+ArrayList <Bullet> pew = new ArrayList <Bullet>();
 public void setup() 
 {
   //your code here
@@ -12,6 +13,9 @@ public void setup()
   }
   for(int i = 0; i < (int)(Math.random()*5) + 5; i++){
   	asteroides.add(new Asteroid());
+  }
+  for(int i = 0; i < 1; i++){
+  	pew.add(new Bullet(darthVadar));
   }
 
 }
@@ -26,6 +30,11 @@ public void draw()
   	asteroides.get(i).move();
   	asteroides.get(i).show();
   }
+
+  for(int i = 0; i < pew.size(); i++){
+  	pew.get(i).move();
+  }
   darthVadar.show();
+
 }
 
