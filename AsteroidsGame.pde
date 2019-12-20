@@ -5,7 +5,7 @@ ArrayList <Asteroid> asteroides = new ArrayList <Asteroid>();
 public void setup() 
 {
   //your code here
-  size(900, 900);
+  size(500, 500);
   darthVadar = new Spaceship();
   for(int i = 0; i < estrella.length; i++){
   	estrella[i] = new Star();
