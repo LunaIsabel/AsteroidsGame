@@ -1,5 +1,5 @@
 //your variable declarations here
-SpaceShip ship = new SpaceShip();
+SpaceShip darthVadar;
 Stars[] estrella = new Stars[500];
 public void setup() 
 {
@@ -9,6 +9,7 @@ public void setup()
   for(int i = 0; i < estrella.length; i++){
   	estrella[i] = new Star();
   }
+  darthVadar = new SpaceShip();
 
 }
 void opacidad(){
@@ -22,7 +23,6 @@ public void draw()
   for(int i = 0; i < estrella.length; i++){
   	stars[i].show();
   }
-  ship.show();
-
+  darthVadar.show();
 }
 
