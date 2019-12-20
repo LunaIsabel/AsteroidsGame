@@ -1,6 +1,7 @@
 class Asteroid extends Floater{
 	private double rotationSpeed;
 	public Asteroid(){
+		corners = 10;
 		xCorners = new int[corners];
 		yCorners = new int[corners];	
 		xCorners[0] = 0;
