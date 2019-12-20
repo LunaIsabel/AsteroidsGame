@@ -4,10 +4,10 @@ Stars[] estrella = new Stars[500];
 public void setup() 
 {
   //your code here
-  size(900, 900);
+  size(500, 500);
   background(0);
   for(int i = 0; i < estrella.length; i++){
-  	stars[i] = new Star();
+  	estrella[i] = new Star();
   }
 
 }
@@ -22,9 +22,7 @@ public void draw()
   for(int i = 0; i < estrella.length; i++){
   	stars[i].show();
   }
-  ship.move();
   ship.show();
-
 
 }
 
