@@ -33,6 +33,7 @@ public void draw()
 
   for(int i = 0; i < pew.size(); i++){
   	pew.get(i).move();
+  	pew.get(i).show();
   }
   darthVadar.show();
 
