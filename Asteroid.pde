@@ -28,7 +28,7 @@ class Asteroid extends Floater{
 		myCenterX = width/2;
 		myDirectionY = 0;
 		myPointDirection = 0;
-		rotationSpeed = 0;
+		rotationSpeed = (int)(Math.random()* 20);
 
 
 	}
@@ -36,8 +36,6 @@ class Asteroid extends Floater{
 		super.move();
 		myPointDirection += rotationSpeed;
 	}
-
-
 
 	public void setX(int x){
 		myCenterX = x;

@@ -11,7 +11,7 @@ public void setup()
   	estrella[i] = new Star();
   }
   for(int i = 0; i < 1; i++){
-  	asteroides.add(0, new Asteroid());
+  	asteroides.add(new Asteroid());
   }
 
 }
@@ -23,8 +23,8 @@ public void draw()
   	estrella[i].show();
   }
   for(int i = 0; asteroides.size(); i++){
-  	asteroides.get(i).show();
   	asteroides.get(i).move();
+  	asteroides.get(i).show();
   }
   darthVadar.show();
 }
