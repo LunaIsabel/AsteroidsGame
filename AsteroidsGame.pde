@@ -10,7 +10,7 @@ public void setup()
   for(int i = 0; i < estrella.length; i++){
   	estrella[i] = new Star();
   }
-  for(int i = 0; i < asteroides.size(); i++){
+  for(int i = 0; i < 1; i++){
   	asteroides.add(new Asteroid());
   }
 
@@ -22,7 +22,7 @@ public void draw()
   for(int i = 0; i < estrella.length; i++){
   	estrella[i].show();
   }
-  for(int i = 0; asteroides.size(); i++){
+  for(int i = 0; i < asteroides.size(); i++){
   	asteroides.get(i).move();
   	asteroides.get(i).show();
   }
