@@ -12,14 +12,9 @@ public void setup()
   darthVadar = new SpaceShip();
 
 }
-void opacidad(){
-	fill(0, 0, 0, 70);
-	rect(0, 0, 900, 900);
-}
 public void draw() 
 {
   //your code here
-  opacidad();
   for(int i = 0; i < estrella.length; i++){
   	stars[i].show();
   }
