@@ -8,7 +8,7 @@ class Spaceship extends Floater//extends Floater
 		return myCenterX;
 	}
 	public void setY(int y){
-		myCenterX = y;
+		myCenterY = y;
 	}
 	public int getY(){
 		return myCenterY = y;
