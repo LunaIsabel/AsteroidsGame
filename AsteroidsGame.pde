@@ -8,7 +8,7 @@ public void setup()
   for(int i = 0; i < estrella.length; i++){
   	estrella[i] = new Star();
   }
-  darthVadar = new SpaceShip();
+  darthVadar = new Spaceship();
 
 }
 public void draw() 
