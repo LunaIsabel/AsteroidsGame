@@ -30,7 +30,7 @@ class Asteroid extends Floater{
 		myDirectionY = (int)(Math.random()* 5) - 2;
 		myDirectionX = (int)(Math.random()* 5) - 2;
 		myPointDirection = 0;
-		rotationSpeed = (int)(Math.random()* 13);
+		rotationSpeed = (int)(Math.random()* 16) - 8;
 
 
 	}
