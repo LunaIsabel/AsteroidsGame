@@ -48,7 +48,7 @@ public void draw()
   	darthVadar.turn(4);
   }
   if(issPressed){
-  	darthVadar.turn(-4);
+  	darthVadar.accelerate(-0.15);
   }
   darthVadar.move();
   darthVadar.show();
