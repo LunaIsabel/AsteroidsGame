@@ -49,7 +49,7 @@ class Asteroid extends Floater{
 		myCenterY = y;
 	}
 	public int getY(){
-		return myCenterY = y;
+		return myCenterY;
 	}
 	public void setDirectionX(double x){
 		myDirectionX = x;
