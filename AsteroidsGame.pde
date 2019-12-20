@@ -55,11 +55,11 @@ public void draw()
   	for(int j = 0; j < pew.size(); j ++){
   		if(dist((float)pew.get(j).getX(), (float)pew.get(j).getY(), (float)asteroides.get(i).getX(), (float)asteroides.get(i).getY() < 9)){
   			stat = true;
-  			remove.pew(j);
+  			pew.remove(j);
   		}
   	}
   	if(stat){
-  		remove.asteroides(i);
+  		asteroides.remove(i);
   	}
   }
 
