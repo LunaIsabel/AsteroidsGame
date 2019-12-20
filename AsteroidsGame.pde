@@ -50,6 +50,19 @@ public void draw()
   if(issPressed){
   	darthVadar.accelerate(-0.15);
   }
+  for(int i = asteroides.size() - 1; i >= 0; i--){
+  	boolean stat = false;
+  	for(int j = 0; j < pew.size(); j ++){
+  		if(dist((float)pew.get(i).getX(), (float)pew.get(i).getY(), (float)asteroides.get(j).getX(), (float)asteroides.get(j).getY() < 9)){
+  			stat = true;
+  			remove.pew(j);
+  		}
+  	}
+  	if(stat){
+  		remove.asteroides(i);
+  	}
+  }
+
   darthVadar.move();
   darthVadar.show();
 
