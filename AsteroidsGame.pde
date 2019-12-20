@@ -35,7 +35,41 @@ public void draw()
   	pew.get(i).move();
   	pew.get(i).show();
   }
+
+  if(iswPressed){
+  	darthVadar.accelerate(0.15);
+  	darthVadar.traveling(true);
+  }
+  if(isaPressed){
+  	darthVadar.turn(4);
+  	darthVadar.left(true);
+  }
+  if(issPressed){
+  	darthVadar.turn(-4);
+  	darthVadar.right(true);
+  }
+  if(islPressed){
+  	pew.add(new Bullet(darthVadar));
+  }
+
+
+
+
+
   darthVadar.show();
 
 }
 
+void keyPressed(){
+	if(key == 'w') iswPressed == true;
+	if(key == 'a') isaPressed == true;
+	if(key == 's') issPressed == true;
+	if(key == 'l') islPressed == true;
+}
+
+void keyReleased(){
+	if(key == 'w') iswPressed == false;
+	if(key == 'a') isaPressed == false;
+	if(key == 's') issPressed == false;
+	if(key == 'l') islPressed == false;
+}
