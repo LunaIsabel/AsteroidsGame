@@ -52,16 +52,16 @@ public void draw()
 }
 
 void keyPressed(){
-	if(key == 'w') iswPressed == true;
-	if(key == 'a') isaPressed == true;
-	if(key == 's') issPressed == true;
+	if(key == 'w') iswPressed = true;
+	if(key == 'a') isaPressed = true;
+	if(key == 's') issPressed = true;
 	if(key == 'l'){
 		pew.add(new Bullet(darthVadar));
 	}
 }
 
 void keyReleased(){
-	if(key == 'w') iswPressed == false;
-	if(key == 'a') isaPressed == false;
-	if(key == 's') issPressed == false;
+	if(key == 'w') iswPressed = false;
+	if(key == 'a') isaPressed = false;
+	if(key == 's') issPressed = false;
 }
