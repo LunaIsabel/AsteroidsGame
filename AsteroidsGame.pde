@@ -3,6 +3,7 @@ Spaceship darthVadar;
 Star[] estrella = new Star[500];
 ArrayList <Asteroid> asteroides = new ArrayList <Asteroid>();
 ArrayList <Bullet> pew = new ArrayList <Bullet>();
+boolean iswPressed, isaPressed, issPressed, islPressed;
 public void setup() 
 {
   //your code here
@@ -17,6 +18,10 @@ public void setup()
   for(int i = 0; i < 1; i++){
   	pew.add(new Bullet(darthVadar));
   }
+  iswPressed = false;
+  isaPressed = false;
+  issPressed = false;
+  islPressed = false;
 
 }
 public void draw() 
@@ -38,23 +43,16 @@ public void draw()
 
   if(iswPressed){
   	darthVadar.accelerate(0.15);
-  	darthVadar.traveling(true);
   }
   if(isaPressed){
   	darthVadar.turn(4);
-  	darthVadar.left(true);
   }
   if(issPressed){
   	darthVadar.turn(-4);
-  	darthVadar.right(true);
   }
   if(islPressed){
   	pew.add(new Bullet(darthVadar));
   }
-
-
-
-
 
   darthVadar.show();
 
